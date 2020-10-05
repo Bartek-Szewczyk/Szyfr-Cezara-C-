@@ -24,5 +24,7 @@ namespace Szyfr_Cezara
         {
             InitializeComponent();
         }
+
+       
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\bin\Debug\Szyfr Cezara.exe.config
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\bin\Debug\Szyfr Cezara.exe
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\bin\Debug\Szyfr Cezara.pdb
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara.csprojAssemblyReference.cache
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\MainWindow.g.cs
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\App.g.cs
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara_MarkupCompile.cache
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara_MarkupCompile.lref
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\MainWindow.baml
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara.g.resources
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr_Cezara.Properties.Resources.resources
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara.csproj.GenerateResource.cache
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara.csproj.CoreCompileInputs.cache
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara.exe
+C:\Users\48601\Desktop\Studia 3 Semestr\Bezpieczeństwo Systemów Informatycznych\Szyfr Cezara\obj\Debug\Szyfr Cezara.pdb

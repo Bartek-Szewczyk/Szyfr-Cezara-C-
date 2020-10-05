@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Szyfr_Cezara"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="741.513" Width="1063.048">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF49FF25" Offset="0"/>
+                <GradientStop Color="#FFFFBF0C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="299" Margin="26,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="419" Background="{x:Null}">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="299" Margin="608,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="419"  Background="{x:Null}">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="title_text1" Content="Enter Your Text" HorizontalAlignment="Left" Height="28" Margin="26,105,0,0" VerticalAlignment="Top" Width="419" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
+        <Label x:Name="title_text1_Copy" Content="New Text" HorizontalAlignment="Left" Height="28" Margin="608,115,0,0" VerticalAlignment="Top" Width="419" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
+        <Label x:Name="title" Content="Szyfr Cezara" HorizontalAlignment="Left" Height="85" Margin="338,10,0,0" VerticalAlignment="Top" Width="358" FontFamily="Matura MT Script Capitals" FontSize="55" FontWeight="Bold" FontStyle="Italic">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFFFFA00" Offset="0.984"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Height="30" Margin="59,522,0,0" VerticalAlignment="Top" Width="235" Background="#FFAA8842" BorderBrush="#FFDDC00F" />
+
     </Grid>
 </Window>
