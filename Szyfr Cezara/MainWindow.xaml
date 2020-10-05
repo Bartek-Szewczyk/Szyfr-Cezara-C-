@@ -13,18 +13,18 @@
                 <GradientStop Color="#FFFFBF0C" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="299" Margin="26,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="419" Background="{x:Null}">
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="299" Margin="26,153,0,0" TextWrapping="Wrap" Text="Wprowadz tekst" VerticalAlignment="Top" Width="419" Background="{x:Null}">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="299" Margin="608,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="419"  Background="{x:Null}">
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="299" Margin="608,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="419"  IsReadOnly="True" Background="{x:Null}">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
             </TextBox.BorderBrush>
         </TextBox>
         <Label x:Name="title_text1" Content="Enter Your Text" HorizontalAlignment="Left" Height="28" Margin="26,105,0,0" VerticalAlignment="Top" Width="419" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
-        <Label x:Name="title_text1_Copy" Content="New Text" HorizontalAlignment="Left" Height="28" Margin="608,115,0,0" VerticalAlignment="Top" Width="419" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
+        <Label x:Name="title_text1_Copy" Content="New Text" HorizontalAlignment="Left" Height="28" Margin="608,105,0,0" VerticalAlignment="Top" Width="419" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
         <Label x:Name="title" Content="Szyfr Cezara" HorizontalAlignment="Left" Height="85" Margin="338,10,0,0" VerticalAlignment="Top" Width="358" FontFamily="Matura MT Script Capitals" FontSize="55" FontWeight="Bold" FontStyle="Italic">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -34,7 +34,31 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Height="30" Margin="59,522,0,0" VerticalAlignment="Top" Width="235" Background="#FFAA8842" BorderBrush="#FFDDC00F" />
+        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Height="30" Margin="59,522,0,0" VerticalAlignment="Top" Width="235" Background="#FFAA8842" BorderBrush="#FFDDC00F" FontFamily="Gill Sans Ultra Bold" FontSize="16" >
+            <ComboBoxItem IsSelected="True" >Szfrowanie</ComboBoxItem>
+            <ComboBoxItem>Deszyfrowanie</ComboBoxItem>
+
+        </ComboBox>
+        <Slider x:Name="slValue" HorizontalAlignment="Left" Height="28" Margin="652,556,0,0" VerticalAlignment="Top" Width="264" IsSnapToTickEnabled="True" Maximum="34" TickPlacement="BottomRight" TickFrequency="1" RenderTransformOrigin="0.5,0.5"  >
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="921,554,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Center" Background="{x:Null}" FontSize="16" BorderBrush="{x:Null}"/>
+        <Label x:Name="code" Content="Klucz Szyfrujący" HorizontalAlignment="Left" Height="34" Margin="698,493,0,0" VerticalAlignment="Top" Width="264" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
+        <Button x:Name="btn1" Content="WYKONAJ" HorizontalAlignment="Left" Height="71" Margin="383,601,0,0" VerticalAlignment="Top" Width="304" FontFamily="Impact" FontSize="48">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFEBE010" Offset="0"/>
+                    <GradientStop Color="#FF399B17" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
