@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Szyfr_Cezara
 {
     /// <summary>
@@ -38,17 +39,17 @@ namespace Szyfr_Cezara
             int key = (int)slValue.Value;
 
             string orginaltext = text1.Text.ToLower();
-            
+
 
             char[] secretText = orginaltext.ToCharArray();
 
             char[] encryptedText = new char[secretText.Length];
 
-         
-            
+
+
             for (int i = 0; i < secretText.Length; i++)
             {
-               
+
                 char secretItem = secretText[i];
                 int index = Array.IndexOf(alphabet, secretItem);
                 int letterPosition = (index += key) % 35;
@@ -72,15 +73,16 @@ namespace Szyfr_Cezara
 
             if (combobox1.Text == "Szyfrowanie")
             {
-                if (slValue.Value==0)
+                if (slValue.Value == 0)
                 {
                     text2.Text = text1.Text;
                 }
                 else
                 {
+                    
                     Szyfruj();
                 }
-                
+
             }
             else
             {
@@ -92,7 +94,7 @@ namespace Szyfr_Cezara
                 {
                     Deszyfrowanie();
                 }
-                
+
             }
 
         }
@@ -136,7 +138,7 @@ namespace Szyfr_Cezara
             text1.Text = "Wprowadz Tekst";
             text2.Text = "";
             slValue.Value = 0;
-            encrypted.IsSelected=true;
+            encrypted.IsSelected = true;
         }
     }
 }
