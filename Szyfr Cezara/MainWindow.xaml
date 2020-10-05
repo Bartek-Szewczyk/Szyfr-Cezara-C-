@@ -13,12 +13,12 @@
                 <GradientStop Color="#FFFFBF0C" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="299" Margin="26,153,0,0" TextWrapping="Wrap" Text="Wprowadz tekst" VerticalAlignment="Top" Width="419" Background="{x:Null}">
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="299" Margin="26,153,0,0" TextWrapping="Wrap" Text="Wprowadz tekst" VerticalAlignment="Top" Width="419" Background="{x:Null}" FontSize="14">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="299" Margin="608,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="419"  IsReadOnly="True" Background="{x:Null}">
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="299" Margin="608,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="419"  IsReadOnly="True" Background="{x:Null}" FontSize="14">
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
             </TextBox.BorderBrush>
@@ -35,8 +35,8 @@
             </Label.Foreground>
         </Label>
         <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Height="30" Margin="59,522,0,0" VerticalAlignment="Top" Width="235" Background="#FFAA8842" BorderBrush="#FFDDC00F" FontFamily="Gill Sans Ultra Bold" FontSize="16" >
-            <ComboBoxItem IsSelected="True" >Szfrowanie</ComboBoxItem>
-            <ComboBoxItem>Deszyfrowanie</ComboBoxItem>
+            <ComboBoxItem Name="encrypted" IsSelected="True" >Szyfrowanie</ComboBoxItem>
+            <ComboBoxItem Name="decypted">Deszyfrowanie</ComboBoxItem>
 
         </ComboBox>
         <Slider x:Name="slValue" HorizontalAlignment="Left" Height="28" Margin="652,556,0,0" VerticalAlignment="Top" Width="264" IsSnapToTickEnabled="True" Maximum="34" TickPlacement="BottomRight" TickFrequency="1" RenderTransformOrigin="0.5,0.5"  >
@@ -51,11 +51,19 @@
         </Slider>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="921,554,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Center" Background="{x:Null}" FontSize="16" BorderBrush="{x:Null}"/>
         <Label x:Name="code" Content="Klucz Szyfrujący" HorizontalAlignment="Left" Height="34" Margin="698,493,0,0" VerticalAlignment="Top" Width="264" FontFamily="Gill Sans Ultra Bold" FontSize="18"/>
-        <Button x:Name="btn1" Content="WYKONAJ" HorizontalAlignment="Left" Height="71" Margin="383,601,0,0" VerticalAlignment="Top" Width="304" FontFamily="Impact" FontSize="48">
+        <Button x:Name="btn1" Content="WYKONAJ" HorizontalAlignment="Left" Height="71" Margin="383,601,0,0" VerticalAlignment="Top" Width="304" FontFamily="Impact" FontSize="48" Click="btn1_Click">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFEBE010" Offset="0"/>
                     <GradientStop Color="#FF399B17" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnclean" Content="Wyczyść" HorizontalAlignment="Left" Height="63" Margin="844,630,0,0" VerticalAlignment="Top" Width="191" FontWeight="Bold" FontSize="20" Click="btnclean_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF62FF0F" Offset="0"/>
+                    <GradientStop Color="#FFDCEB19" Offset="1"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
