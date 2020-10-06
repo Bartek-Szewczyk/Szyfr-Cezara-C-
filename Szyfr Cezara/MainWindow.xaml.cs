@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -38,13 +39,17 @@ namespace Szyfr_Cezara
 
             int key = (int)slValue.Value;
 
-            string orginaltext = text1.Text.ToLower();
+            char[] znak = new char[] { '.', ',', '?', '!', '@' };
+
+            string orginaltext = text1.Text.ToLower().Replace(" ", "").Replace(".", "").Replace(",", "").Trim(znak).Replace(znak.ToString(), "");
+
+
 
 
             char[] secretText = orginaltext.ToCharArray();
 
-            char[] encryptedText = new char[secretText.Length];
 
+            char[] encryptedText = new char[secretText.Length];
 
 
             for (int i = 0; i < secretText.Length; i++)
@@ -64,7 +69,6 @@ namespace Szyfr_Cezara
 
 
 
-
         }
 
 
@@ -75,11 +79,11 @@ namespace Szyfr_Cezara
             {
                 if (slValue.Value == 0)
                 {
+                    MessageBox.Show("Klucz nie został podany, tekst jest taki sam", "Szyfr Cezara", MessageBoxButton.OK, MessageBoxImage.Information);
                     text2.Text = text1.Text;
                 }
                 else
                 {
-                    
                     Szyfruj();
                 }
 
@@ -88,6 +92,7 @@ namespace Szyfr_Cezara
             {
                 if (slValue.Value == 0)
                 {
+                    MessageBox.Show("Klucz nie został podany, tekst jest taki sam", "Szyfr Cezara", MessageBoxButton.OK, MessageBoxImage.Information);
                     text2.Text = text1.Text;
                 }
                 else
@@ -135,6 +140,7 @@ namespace Szyfr_Cezara
 
         private void Clean()
         {
+
             text1.Text = "Wprowadz Tekst";
             text2.Text = "";
             slValue.Value = 0;
