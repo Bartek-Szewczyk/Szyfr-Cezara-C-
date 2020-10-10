@@ -41,7 +41,7 @@ namespace Szyfr_Cezara
 
             char[] znak = new char[] { '.', ',', '?', '!', '@' };
 
-            string orginaltext = text1.Text.ToLower().Replace(" ", "").Replace(".", "").Replace(",", "").Trim(znak).Replace(znak.ToString(), "");
+            string orginaltext = text1.Text.ToLower().Replace(" ", "").Replace(".", "").Replace(",", "").Trim(znak);
 
 
 
@@ -79,7 +79,7 @@ namespace Szyfr_Cezara
             {
                 if (slValue.Value == 0)
                 {
-                    MessageBox.Show("Klucz nie został podany, tekst jest taki sam", "Szyfr Cezara", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Klucz ma wartość 0, tekst jest taki sam", "Szyfr Cezara", MessageBoxButton.OK, MessageBoxImage.Information);
                     text2.Text = text1.Text;
                 }
                 else
@@ -92,7 +92,7 @@ namespace Szyfr_Cezara
             {
                 if (slValue.Value == 0)
                 {
-                    MessageBox.Show("Klucz nie został podany, tekst jest taki sam", "Szyfr Cezara", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Klucz ma wartość 0, tekst jest taki sam", "Szyfr Cezara", MessageBoxButton.OK, MessageBoxImage.Information);
                     text2.Text = text1.Text;
                 }
                 else
